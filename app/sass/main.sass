@@ -85,6 +85,18 @@ section
     background-color: #ffffff
     height: 2px
 
+.mm-navbar
+  height: 120px
+  border: none
+  .mm-title img
+    height: 25px
+
+.mm-panels>.mm-panel:after, .mm-panels>.mm-panel:before
+  height: 0
+
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview
+  margin-top: 0
+
 .img-responsive
 	display: block
 	max-width: 100%
