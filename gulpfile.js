@@ -14,7 +14,6 @@ var gulp           = require('gulp'),
 		notify         = require("gulp-notify");
 
 // Скрипты проекта
-
 gulp.task('common-js', function() {
 	return gulp.src([
 		'app/js/common.js',
@@ -23,6 +22,7 @@ gulp.task('common-js', function() {
 	.pipe(uglify())
 	.pipe(gulp.dest('app/js'));
 });
+
 
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
