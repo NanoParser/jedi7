@@ -40,6 +40,7 @@ body
       .site-header
         min-height: 700px
         height: 100vh
+        color: #ffffff
         background-color: $dark
         .top-line
           padding-top: 40px
@@ -53,6 +54,19 @@ body
     height: auto
     margin-left: 45px
 
+.phone
+  position: absolute
+  right: 85px
+  top: 44px
+  font-family: firasans, sans-serif
+  font-size: 22px
+  white-space: nowrap
+  .fa
+    color: #5BC5FF
+    font-size: 26px
+    margin-right: 5px
+    margin-top: 2px
+
 section, header
   position: relative
   background-size: cover
@@ -60,6 +74,16 @@ section, header
 
 section
   background-color: #ffffff
+
+.hamburger
+  position: absolute
+  right: 0px
+  top: 35px
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after
+    color: #ffffff
+    width: 34px
+    background-color: #ffffff
+    height: 2px
 
 .img-responsive
 	display: block
