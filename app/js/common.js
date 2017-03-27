@@ -11,10 +11,9 @@ $(function() {
     });
 
 	var api = $('#my-menu').data('mmenu');
-    api.bind('opened', function() {
-        alert('opened');
+    api.bind('open:finish', function() {
         $('.hamburger').addClass('is-active');
-    }).bind('closed', function() {
+    }).bind('close:finish', function() {
         $('.hamburger').removeClass('is-active');
     });
 });
